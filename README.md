@@ -1,1 +1,2 @@
-# stepik2
+# zadanko na stepik!
+podstrony: /products i /inventory-report
