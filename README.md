@@ -1,4 +1,5 @@
 # zadanko na stepik!
-podstrony: /products i /inventory-report
-npm install zeby zainstalowalo dependencies
-npm run start zeby odpalilo:)
+podstrony: /products i /inventory-report  <br /> 
+npm install zeby zainstalowalo dependencies <br /> 
+npm run start zeby odpalilo:) <br /> 
+wlasna baze danych trzeba ogarnac (jest json do pobrania) <br /> 
