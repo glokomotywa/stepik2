@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script type="module" src="/scripts.mjs" defer></script>
+</head>
+<body>
+    <h1>Products</h1>
+    <form id="filterForm">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="number" name="minPrice" placeholder="Min Price" />
+        <input type="number" name="maxPrice" placeholder="Max Price" />
+        <select name="sortBy">
+            <option value="name">Name</option>
+            <option value="price">Price</option>
+            <option value="weight">Weight</option>
+        </select>
+        <select name="sortOrder">
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <button type="submit">Filter and Sort</button>
+    </form>
+    <ul id="productList">
+        <% products.forEach(product => { %>
+            <li>
+                <h2><%= product.name %></h2>
+                <p>Price: <%= product.price %></p>
+                <p>Weight: <%= product.weight %></p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>

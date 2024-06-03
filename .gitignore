@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Directory for build and test artifacts
+dist/
+build/
+coverage/
+
+# Docker files
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# MongoDB dumps
+dump/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store

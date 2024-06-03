@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Report</title>
+</head>
+<body>
+    <h1>Inventory Report</h1>
+    <p>Total Quantity: <%= report.totalQuantity %></p>
+    <p>Total Value: <%= report.totalValue %></p>
+    <ul>
+        <% report.products.forEach(product => { %>
+            <li>
+                <h2><%= product.name %></h2>
+                <p>Quantity: <%= product.quantity %></p>
+                <p>Value: <%= product.value %></p>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
